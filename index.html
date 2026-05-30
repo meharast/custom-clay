@@ -293,7 +293,34 @@
       margin-bottom: 8px !important;
     }
 
-    /* ── ANIMATIONS ── */
+    /* ── FAQ PAGE ── */
+    .faq-list {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 28px 0;
+    }
+
+    .faq-item:first-child { padding-top: 0; }
+
+    .faq-item h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .faq-item p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+    }
     @keyframes fadeDown {
       from { opacity: 0; transform: translateY(-18px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -319,7 +346,7 @@
 <button data-page="coasters">Coasters</button>
 <button data-page="custom">Custom Pieces</button>
 <button data-page="commissions">Order</button>
-</nav>
+<button data-page="faq">FAQ</button></nav>
 <div class="divider"></div>
 <main>
 <!-- JEWELRY DISHES -->
@@ -510,11 +537,36 @@
 <a class="email-btn" href="mailto:mrustey01@gmail.com?subject=Custom Clay Order">Email Me</a>
 <p class="order-note">Orders take 1–3 weeks to complete</p></div>
 </section>
+<section class="page" id="faq">
+<div class="page-intro">
+<h2>FAQ</h2>
+</div>
+<div class="faq-list"><div class="faq-item">
+<h4>Is this food safe? Can I wash them?</h4>
+<p>The pieces are NOT meant to be eaten in or washed.</p>
+</div><div class="faq-item">
+<h4>Do I have to request what's on the website?</h4>
+<p>You may request ideas outside of what is shown. Each piece is customized.</p>
+</div><div class="faq-item">
+<h4>How much do the custom pieces cost?</h4>
+<p>Prices can range from ~$25–40 for jewelry dishes; ~$7–$10 for individual coasters; $15+ for anything else custom. Email me to get a quote!</p>
+</div><div class="faq-item">
+<h4>What clay is used?</h4>
+<p>High quality air dry clay.</p>
+</div><div class="faq-item">
+<h4>How long does it take to make?</h4>
+<p>Any piece takes a series of days to complete, from sculpting, smoothing, drying, painting, and glazing. Your piece(s) may take anywhere between 1–3 weeks.</p>
+</div><div class="faq-item">
+<h4>How will I receive my order?</h4>
+<p>It will either be shipped to you, handed over, or dropped off. This is factored into the final price.</p>
+</div></div>
+</section>
 </main>
 <script>
     const nav = document.getElementById('nav');
     const buttons = nav.querySelectorAll('button');
     const pages = document.querySelectorAll('.page');
+
 
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -527,4 +579,3 @@
   </script>
 </body>
 </html>
-
