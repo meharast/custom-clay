@@ -259,7 +259,10 @@
     .commission-block a:hover { opacity: 0.5; }
 
     .email-btn {
-      display: inline-block !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 200px !important;
       font-family: 'Jost', sans-serif !important;
       font-weight: 300 !important;
       font-size: 0.78rem !important;
@@ -287,6 +290,12 @@
       margin-bottom: 0 !important;
       letter-spacing: 0.02em;
     }
+
+    .ig-btn { margin-left: 0 !important; margin-top: 0 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; font-size: 0.72rem !important; padding: 14px 0 !important; width: 200px !important; }
+
+    .btn-row { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 12px; }
+
+    .btn-or { font-family: 'Jost', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; color: var(--text-muted); flex-shrink: 0; }
 
     .reach-out {
       margin-top: 0 !important;
@@ -531,10 +540,13 @@
 <p>I make custom pieces that make for great personal use, decor, or gifts. I'm happy to chat and work through ideas with you before you commit to anything. Each piece is handmade by me and painted!</p>
 <div class="pricing-box">
 <h4>Pricing Range</h4>
-<p>$7 – $40+ depending on what you want -- size, complexity, design, quantity.</p>
+<p>$5 – $40+ depending on what you want -- size, complexity, design, quantity.</p>
 </div>
-<p class="reach-out">Send me a message with what you're thinking, including any inspo and reference pics if you have any, and we'll go from there!</p>
-<a class="email-btn" href="mailto:mrustey01@gmail.com?subject=Custom Clay Order">Email Me</a>
+<p class="reach-out">Send me a message with what you're thinking, including any inspo and reference pics if you have any, and we'll go from there!</p><div class="btn-row">
+<a class="email-btn" href="sms:+19253201555">Text Me</a>
+<span class="btn-or">OR</span>
+<a class="email-btn ig-btn" href="https://instagram.com/meha_rastogi" target="_blank">DM on IG: @meha_rastogi</a>
+</div>
 <p class="order-note">Orders take 1–3 weeks to complete</p></div>
 </section>
 <section class="page" id="faq">
@@ -549,7 +561,7 @@
 <p>You may request ideas outside of what is shown. Each piece is customized.</p>
 </div><div class="faq-item">
 <h4>How much do the custom pieces cost?</h4>
-<p>Prices can range from ~$25–40 for jewelry dishes; ~$7–$10 for individual coasters; $15+ for anything else custom. Email me to get a quote!</p>
+<p>Prices can range from ~$25–40 for jewelry dishes; starting price ~$5 for coasters, $8+ for sets of coasters; $15+ for anything else custom. Email me to get a quote!</p>
 </div><div class="faq-item">
 <h4>What clay is used?</h4>
 <p>High quality air dry clay.</p>
